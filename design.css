@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Chango&family=Kenia&family=Modak&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    padding: auto;
+    margin: auto;
+    background: pink;
+    display: table;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 5% 0 5% 0;
+}
+.header .calendar{
+    font-family: 'Bagel Fat One', cursive;
+    font-size: 70px;
+    color: brown;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.calendar-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+
+/* Month table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: table;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.month-title {
+    background: lightcoral;
+    color: brown;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: white;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+td {
+    border: 1px solid grey;
+    text-align: center;
+    padding: 5px;
+}
+
+ /* Holiday highlight */
+    .holiday {
+        background-color: palegoldenrod;
+        font-weight: bold;
+        color: black;
+    }
+
+   /* Popup overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  /* Show popup when targeted */
+  .popup-overlay:target {
+    display: flex;
+  }
+
+.popup img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+  
+  .popup {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    text-align: left;
+  }
+  
+  .popup h3 {
+    margin: 5px 5px;
+      font-size: 30px;
+      font-family: fantasy;
+    color: brown;
+      text-align: center;
+  }
+
+.p {
+    font-size: 20px;
+}
+  
+  .close-btn {
+    display: inline-block;
+    margin-top: 15px;
+      margin-left: 160px;
+    padding: 8px 16px;
+    background: lightcoral;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .close-btn:hover {
+    background: crimson;
+  }
+
+table td:first-child {
+        color: red;
+        font-weight: bold;
+    }
+
+/* Responsive */
+@media (max-width: 1024px){
+    @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Chango&family=Kenia&family=Modak&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+}
+
+
+    

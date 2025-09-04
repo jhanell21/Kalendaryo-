@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="kalendaryo.html">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>My Birthday</title>
+  <style>
+    body {
+      background-color: pink;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin: 50px 0;
+    }
+
+    .photo-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* default 3 per row */
+      gap: 15px;
+      justify-items: center;
+      margin: 20px auto;
+      max-width: 900px;
+      padding: 0 15px;
+    }
+
+    .photo-container img {
+      width: 200px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    
+   a {
+      position: fixed;
+top: 20px;
+left: 20px;
+
+    }
+
+    .photo-container img:hover {
+      transform: scale(1.1);
+    }
+
+    /* 📱 kapag maliit ang screen (tablet & phone) */
+    @media (max-width: 768px) {
+      .photo-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row */
+      }
+    }
+
+    /* 📱 kapag sobrang liit (cellphone portrait) */
+    @media (max-width: 480px) {
+      .photo-container {
+        grid-template-columns: 1fr; /* 1 per row */
+      }
+      .photo-container img {
+        width: 100%; /* gawing sakto sa lapad ng screen */
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="kalendaryo.html" style="text-decoration: none; padding: 10px 20px; background-color: rgb(245, 130, 130); color: white; border-radius: 5px;">
+    ← Go Back
+  </a>
+  
+
+  <h1>It's My Birthday 🎉</h1>
+  <div class="photo-container">
+    <img src="jhanell1.jpg" alt="ako">
+    <img src="jhanell6.jpg" alt="ako ulit">
+    <img src="jhanell4.jpg" alt="ako parin">
+    <img src="jhanell5.jpg" alt="me">
+    <img src="jhanell2.jpg" alt="also me">
+    <img src="jhanell3.jpg" alt="me again">
+  </div>
+</body>
+</html>

@@ -21,7 +21,7 @@
 
     .photo-container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* default 3 per row */
+      grid-template-columns: repeat(3, 1fr);
       gap: 15px;
       justify-items: center;
       margin: 20px auto;
@@ -39,29 +39,27 @@
     
    a {
       position: fixed;
-top: 20px;
-left: 20px;
+			top: 20px;
+			left: 20px;
 
     }
 
     .photo-container img:hover {
       transform: scale(1.1);
     }
-
-    /* 📱 kapag maliit ang screen (tablet & phone) */
+    
     @media (max-width: 768px) {
       .photo-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 per row */
+        grid-template-columns: repeat(2, 1fr); 
       }
     }
-
-    /* 📱 kapag sobrang liit (cellphone portrait) */
+    
     @media (max-width: 480px) {
       .photo-container {
-        grid-template-columns: 1fr; /* 1 per row */
+        grid-template-columns: 1fr; 
       }
       .photo-container img {
-        width: 100%; /* gawing sakto sa lapad ng screen */
+        width: 100%; 
         max-width: 300px;
       }
     }
